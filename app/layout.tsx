@@ -8,17 +8,25 @@ import Footer from "./components/ui/Footer";
 const baseURL = 'https://chrisdevcode.co.ke';
 const defaultTitle = 'ChrisDevCode';
 const defaultDescription = 'ChrisDevCode | technologies that may make sense';
-const imagesBaseURL = 'https://nextjs.org';
+const imagesBaseURL = 'https://chrisdevcode.co.ke';
 const creatorName = 'Chris Achinga';
 
 export const metadata: Metadata = {
-  title: "ChrisDevCode",
-  description: "ChrisDevCode | technologies that may make sense",
-  keywords: ['Software Developers', 'Developers in Mombasa', 'Developers in Kenya', 'Python Developers', 'Django Developers in Kenya', 'Django Developers in Mombasa', 'Software Engineers'],
+  title: defaultTitle,
+  description: defaultDescription,
+  keywords: [
+    'Software Developers',
+    'Developers in Mombasa',
+    'Developers in Kenya',
+    'Python Developers',
+    'Django Developers in Kenya',
+    'Django Developers in Mombasa',
+    'Software Engineers',
+  ],
   referrer: 'origin-when-cross-origin',
-  creator: 'Chris Achinga',
-  publisher: 'ChrisDevCode Technologies',
-  applicationName: 'ChrisDevCode',
+  creator: creatorName,
+  publisher: `${defaultTitle} Technologies`,
+  applicationName: defaultTitle,
   alternates: {
     canonical: '/',
     languages: {
@@ -26,18 +34,18 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'ChrisDevCode Technologies',
+    title: `${defaultTitle} Technologies`,
     description: 'Building technologies that may make sense',
-    url: 'https://chrisdevcode.co.ke',
-    siteName: 'ChrisDevCode',
+    url: baseURL,
+    siteName: defaultTitle,
     images: [
       {
-        url: 'https://nextjs.org/og.png', // Must be an absolute URL
+        url: `${imagesBaseURL}/og.png`,
         width: 800,
         height: 600,
       },
       {
-        url: 'https://nextjs.org/og-alt.png', // Must be an absolute URL
+        url: `${imagesBaseURL}/og-alt.png`,
         width: 1800,
         height: 1600,
         alt: 'My custom alt',
@@ -45,14 +53,14 @@ export const metadata: Metadata = {
     ],
     videos: [
       {
-        url: 'https://nextjs.org/video.mp4', // Must be an absolute URL
+        url: `${imagesBaseURL}/video.mp4`,
         width: 800,
         height: 600,
       },
     ],
     audio: [
       {
-        url: 'https://nextjs.org/audio.mp3', // Must be an absolute URL
+        url: `${imagesBaseURL}/audio.mp3`,
       },
     ],
     locale: 'en_US',
@@ -74,7 +82,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/icon.png' },
-      new URL('/icon.png', 'https://example.com'),
+      new URL('/icon.png', baseURL),
       { url: '/icon-dark.png', media: '(prefers-color-scheme: dark)' },
     ],
     shortcut: ['/shortcut-icon.png'],
@@ -89,15 +97,15 @@ export const metadata: Metadata = {
       },
     ],
   },
-  manifest: 'https://nextjs.org/manifest.json',
+  manifest: `${imagesBaseURL}/manifest.json`,
   twitter: {
     card: 'summary_large_image',
-    title: 'Next.js',
+    title: defaultTitle,
     description: 'The React Framework for the Web',
     siteId: '1467726470533754880',
     creator: '@nextjs',
     creatorId: '1467726470533754880',
-    images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+    images: [`${imagesBaseURL}/og.png`],
   },
   appleWebApp: {
     title: 'Apple Web App',
