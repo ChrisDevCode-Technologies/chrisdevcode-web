@@ -1,9 +1,9 @@
-import React from 'react'
 
 const Footer = () => {
+
+  // get current year
+  const year = new Date().getFullYear()
   return (
-    <>
-  {/* ========== FOOTER ========== */}
   <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
     {/* Grid */}
     <div className="text-center">
@@ -13,23 +13,23 @@ const Footer = () => {
           href="#"
           aria-label="Brand"
         >
-          Brand
+          ChrisDevCode
         </a>
       </div>
       {/* End Col */}
       <div className="mt-3">
         <p className="text-gray-500 dark:text-neutral-500">
-          We&apos;re part of the{" "}
+          This is part of{" "}
           <a
             className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
             href="#"
           >
-            Htmlstream
+            C A&apos;s
           </a>{" "}
-          family.
+          quests.
         </p>
         <p className="text-gray-500 dark:text-neutral-500">
-          © 2024 Preline Labs.
+          © {year} ChrisDevCode Technologies.
         </p>
       </div>
       {/* Social Brands */}
@@ -99,9 +99,6 @@ const Footer = () => {
     </div>
     {/* End Grid */}
   </footer>
-  {/* ========== END FOOTER ========== */}
-</>
-
   )
 }
 
