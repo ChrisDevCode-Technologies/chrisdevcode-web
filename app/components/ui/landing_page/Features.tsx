@@ -11,7 +11,7 @@ const Features = () => {
         Explore tools
       </h2>
       <p className="mt-3 text-gray-800 dark:text-neutral-200">
-        The powerful and flexible theme for all kinds of businesses.
+        We currently don't make customizable Software
       </p>
     </div>
     {/* End Title */}
@@ -37,7 +37,7 @@ const Features = () => {
         </svg>
         <div className="mt-2 sm:mt-6">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-neutral-200">
-            Responsive
+            SGR Transit
           </h3>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Features = () => {
         </svg>
         <div className="mt-2 sm:mt-6">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-neutral-200">
-            Customizable
+            Events and Conferences
           </h3>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Features = () => {
         </svg>
         <div className="mt-2 sm:mt-6">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-neutral-200">
-            24/7 Support
+            Messaging Tools
           </h3>
         </div>
       </div>
