@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image'
 
 const Features = () => {
   return (
@@ -11,7 +11,7 @@ const Features = () => {
         Explore tools
       </h2>
       <p className="mt-3 text-gray-800 dark:text-neutral-200">
-        We currently don't make customizable Software
+        We currently don&apos;t make customizable Software
       </p>
     </div>
     {/* End Title */}
@@ -97,34 +97,42 @@ const Features = () => {
     {/* Grid */}
     <div className="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8">
       <div className="hidden md:block col-span-4 md:col-span-3">
-        <img
+        <Image
           className="rounded-xl"
           src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-          alt="Features Image"
+              alt="Features Image"
+              width={920}
+              height={612}
         />
       </div>
       {/* End Col */}
       <div className="col-span-4 md:col-span-3">
-        <img
+        <Image
           className="rounded-xl"
           src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-          alt="Features Image"
+              alt="Features Image"
+              width={920}
+              height={612}
         />
       </div>
       {/* End Col */}
       <div className="col-span-4 md:col-span-3">
-        <img
+        <Image
           className="rounded-xl"
           src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-          alt="Features Image"
+              alt="Features Image"
+              width={920}
+              height={612}
         />
       </div>
       {/* End Col */}
       <div className="col-span-4 md:col-span-3">
-        <img
+        <Image
           className="rounded-xl"
           src="https://images.unsplash.com/photo-1640622300473-977435c38c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=920&q=80"
-          alt="Features Image"
+              alt="Features Image"
+              width={920}
+              height={612}
         />
       </div>
       {/* End Col */}

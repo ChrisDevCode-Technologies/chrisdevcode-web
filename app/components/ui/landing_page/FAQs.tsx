@@ -1,5 +1,3 @@
-import React from 'react'
-
 const FAQs = () => {
   return (
 <>
@@ -120,7 +118,7 @@ const FAQs = () => {
               So what TF do you do?
             </h3>
             <p className="mt-1 text-gray-500 dark:text-neutral-500">
-              For now, we are building our ideas, testing them out. If they work out we are happy, if they don't we may need to start building custom websites and softwares for businesses and people out here.
+              For now, we are building our ideas, testing them out. If they work out we are happy, if they don&apos;t we may need to start building custom websites and softwares for businesses and people out here.
             </p>
           </div>
         </div>
