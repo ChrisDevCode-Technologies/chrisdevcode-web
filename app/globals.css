@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #0051ba;
+  --text-white: #FFFFFF;
+  --color-darkblue: #003f8c;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,9 +20,31 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
   min-height: 70vh;
+}
+
+button, .accent {
+  color: var(--color-primary);
+}
+
+.bg-dark, .text-on-dark {
+  background-color: var(--text-white);
+  color: var(--background);
+}
+
+.hover-highlight:hover {
+  color: var(--color-darkblue);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p, span, a, li, body {
+  font-weight: normal;
 }
