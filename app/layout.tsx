@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import PrelineScript from "./components/PrelineScript";
+
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 import Header from "./components/ui/Header";
 import Footer from "./components/ui/Footer";
@@ -135,6 +139,20 @@ export default function RootLayout({
         <Footer />
       </body>
       <PrelineScript />
+      <SpeedInsights />
+      <Analytics />
+      <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZKM8LR9G22"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZKM8LR9G22');
+          `}
+        </Script>
     </html>
   );
 }
