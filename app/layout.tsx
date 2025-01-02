@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import PrelineScript from "./components/PrelineScript";
+import PrelineScript from "../components/PrelineScript";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-import Header from "./components/ui/Header";
-import Footer from "./components/ui/Footer";
+import Header from "../components/ui/Header";
+import Footer from "../components/ui/Footer";
 
 const baseURL = "https://chrisdevcode.co.ke";
 const defaultTitle = "ChrisDevCode";
